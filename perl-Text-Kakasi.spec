@@ -20,6 +20,7 @@ Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.daionet.gr.jp/~knok/kakasi/Text-Kakasi-%{version}.tar.gz
+# Source0-md5:	6c50ca6dce1fcc2f01446f6e305571a5
 URL:		http://www.daionet.gr.jp/~knok/kakasi/
 BuildRequires:	kakasi-devel >= 2.3.1
 BuildRequires:	rpm-perlprov >= 4.1-13
