@@ -8,7 +8,7 @@ Summary(fr):	Un module de bibliothХque Kakasi pour Perl
 Summary(it):	Modulo di libreria KAKASI per Perl
 Summary(ja):	Perl мя╓н KAKASI ╔И╔╓╔ж╔И╔Й╔Б╔╦╔Е║╪╔К
 Summary(ko):	фчю╩ ю╖гя KAKASI ╤Сюл╨Й╥╞╦╝ ╦Паы
-Summary(no):	Et KAKASI-modul for Perl
+Summary(nb):	Et KAKASI-modul for Perl
 Summary(pl):	Interfejs Perla do biblioteki KAKASI
 Summary(pt):	Um mСdulo da biblioteca KAKASI para o Perl
 Summary(ru):	Модуль библиотеки KAKASI для Perl
