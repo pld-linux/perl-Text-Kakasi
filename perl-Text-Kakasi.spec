@@ -3,6 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
+%define	pdir	Text
+%define	pnam	Kakasi
 Summary:	A KAKASI library module for Perl
 Summary(cs):	Modul s KAKASI knihovnou pro Perl
 Summary(da):	Et KAKASI-modul for Perl
@@ -19,13 +21,13 @@ Summary(ru):	íÏÄÕÌØ ÂÉÂÌÉÏÔÅËÉ KAKASI ÄÌÑ Perl
 Summary(sv):	En KAKASI-bibliotekmodul för Perl
 Summary(zh_CN):	Perl µÄ KAKASI ¿âÄ£¿é¡£
 Name:		perl-Text-Kakasi
-Version:	1.05
-Release:	4
+Version:	2.04
+Release:	1
 # README says just GPL, but module itself GPL v2+
 License:	GPL v2+
 Group:		Development/Languages/Perl
-Source0:	http://www.daionet.gr.jp/~knok/kakasi/Text-Kakasi-%{version}.tar.gz
-# Source0-md5:	6c50ca6dce1fcc2f01446f6e305571a5
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	5a9e381cb93edfd707124a63c60f96b1
 URL:		http://www.daionet.gr.jp/~knok/kakasi/
 BuildRequires:	kakasi-devel >= 2.3.1
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -99,7 +101,7 @@ KAKASI-bibliotek).  KAKASI är ett språkbearbetningsfilter för att
 konvertera Kanjitecken till Hiragana, Katakana eller Romaji.
 
 %prep
-%setup -q -n Text-Kakasi-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 %{__perl} Makefile.PL \
@@ -120,10 +122,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README*
-%lang(ja) %doc README.jp*
-%{perl_vendorarch}/Text/Kakasi.pm
+%doc README
+%lang(ja) %doc README.jp
+%{perl_vendorarch}/Text/*.pm
 %dir %{perl_vendorarch}/auto/Text/Kakasi
-%{perl_vendorarch}/auto/Text/Kakasi/Kakasi.bs
-%attr(755,root,root) %{perl_vendorarch}/auto/Text/Kakasi/Kakasi.so
-%{_mandir}/man3/Text::Kakasi.3pm*
+%attr(755,root,root) %{perl_vendorarch}/auto/Text/Kakasi/*.so
+%{_mandir}/man3/*
