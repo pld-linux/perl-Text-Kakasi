@@ -1,5 +1,4 @@
 %include	/usr/lib/rpm/macros.perl
-
 Summary:	A KAKASI library module for Perl
 Summary(cs):	Modul s KAKASI knihovnou pro Perl
 Summary(da):	Et KAKASI-modul for Perl
@@ -108,9 +107,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README*
-%lang(ja) %doc README.jp.gz
+%lang(ja) %doc README.jp*
 %{perl_sitearch}/Text/Kakasi.pm
 %dir %{perl_sitearch}/auto/Text/Kakasi
 %{perl_sitearch}/auto/Text/Kakasi/Kakasi.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Text/Kakasi/Kakasi.so
-%{_mandir}/man3/Text::Kakasi.3pm.gz
+%{_mandir}/man3/Text::Kakasi.3pm*
