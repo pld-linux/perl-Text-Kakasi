@@ -1,9 +1,23 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	kakasi library module for perl
-Summary(pl):	Interfejs perla do biblioteki kakasi
+
+Summary:	A KAKASI library module for Perl
+Summary(cs):	Modul s KAKASI knihovnou pro Perl
+Summary(da):	Et KAKASI-modul for Perl
+Summary(de):	Ein KAKASI-Bibliothek Modul für Perl
+Summary(es):	Módulo de la Biblioteca KAKASI para Perl
+Summary(fr):	Un module de bibliothèque Kakasi pour Perl
+Summary(it):	Modulo di libreria KAKASI per Perl
+Summary(ja):	Perl ÍÑ¤Î KAKASI ¥é¥¤¥Ö¥é¥ê¥â¥¸¥å¡¼¥ë
+Summary(ko):	ÆŞÀ» À§ÇÑ KAKASI ¶óÀÌºê·¯¸® ¸ğÁÙ
+Summary(no):	Et KAKASI-modul for Perl
+Summary(pl):	Interfejs Perla do biblioteki KAKASI
+Summary(pt):	Um módulo da biblioteca KAKASI para o Perl
+Summary(ru):	íÏÄÕÌØ ÂÉÂÌÉÏÔÅËÉ KAKASI ÄÌÑ Perl
+Summary(sv):	En KAKASI-bibliotekmodul för Perl
+Summary(zh_CN):	Perl µÄ KAKASI ¿âÄ£¿é¡£
 Name:		perl-Text-Kakasi
 Version:	1.05
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.daionet.gr.jp/~knok/kakasi/Text-Kakasi-%{version}.tar.gz
@@ -19,6 +33,35 @@ characters to Hiragana, Katakana or Romaji and may be helpful to read
 Japanese documents. More information about KAKASI is available at
 <http://kakasi.namazu.org/>.
 
+%description -l cs
+Modul Text-Kakasi poskytuje rozhraní ke knihovnì libkakasi do jazyka Perl.
+KAKASI je filtr pro konverze japonskıch znakù Hiragana, Katakana nebo Romaji.
+
+%description -l da
+Modulet Text-Kakasi giver et grænseflade for Perl til libkakasi (et
+KAKASI-bibliotek).  KAKASI er et sprogbearbejdningsfilter for at
+konvertere Kanjitegn til Hiragana, Katakana eller Romaji.
+
+%description -l de
+Das Text-Kakasi-Modul unterstützt ein libkakasi (eine KAKASI-Bibliothek)
+Interface für Perl.  KAKASI ist ein Sprachprozessfilter zur Umwandlung der
+Kanji-Schriftzeichen in Hirahana, Katakana oder Romaji.
+
+%description -l es
+El módulo Text-Kakasi proporciona una interfaz de libkakasi (biblioteca
+KAKASI) para Perl. KAKASI es un filtro del proceso de lenguaje para 
+convertir carácteres Kanji a los Hiragana, Katana o Romaji.
+
+%description -l fr
+Le module Text-Kakasi fournit une interface libkakasi (bibliothèque Kakasi)
+pour Perl. Kakasi est un filtre de processeur de langage pour convertir les
+caractères Kanji en caractères Hiragana, Katakana ou Romaji.
+
+%description -l it
+Il modulo Text-Kakasi fornisce un'interfacia libkakasi (una libreria
+KAKASI) per Perl. KAKASI è un filtro di elaborazione delle lingue per
+convertire i caratteri Kanji in Hirigana, Katakana o Romanji.
+
 %description -l ja
 ¤³¤Î¥â¥¸¥å¡¼¥ë¤Ï¡¢¹â¶¶Íµ¿®¤µ¤ó¤ÎºîÀ®¤µ¤ì¤¿¥½¥Õ¥È¥¦¥§¥¢KAKASI¤òperl
 ¤«¤éÍÑ¤¤¤ë¤¿¤á¤Î¤â¤Î¤Ç¤¹¡£
@@ -33,6 +76,20 @@ Katakana lub Romaji, który mo¿e byæ przydatny przy czytaniu japoñskich
 dokumentów. Wiêcej informacji o KAKASI znajduje siê na stronie
 <http://kakasi.namazu.org/>.
 
+%description -l pt
+O módulo Text-Kakasi oferece uma interface da libkakasi (uma biblioteca
+de KAKASI) para o Perl. O KAKASI é um filtro de processamento para 
+converter os caracteres Kanji para Hiragana, Katakana ou Romaji.
+
+%description -l ru
+íÏÄÕÌØ Text-Kakasi ÓÏÄÅÒÖÉÔ ÂÉÂÌÉÏÔÅËÕ libkakasi, ËÏÔÏÒÁÑ ĞÒÅÄÏÓÔÁ×ÌÑÅÔ
+ÉÎÔÅÒÆÅÊÓ KAKASI ÄÌÑ Perl. æÉÌØÔÒ KAKASI ĞÒÅÄÎÁÚÎÁŞÅÎ ÄÌÑ ĞÒÅÏÂÒÁÚÏ×ÁÎÉÑ
+ÔÅËÓÔÁ É ËÏÄÉÒÏ×ËÉ Kanji × Hiragana, Katakana ÉÌÉ Romaji.
+%description -l sv
+Modulen Text-Kakasi ger ett gränssnitt för Perl till libkakasi (ett
+KAKASI-bibliotek).  KAKASI är ett språkbearbetningsfilter för att
+konvertera Kanjitecken till Hiragana, Katakana eller Romaji.
+
 %prep
 %setup -q -n Text-Kakasi-%{version}
 
@@ -45,14 +102,12 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.gz
+%doc README*
 %lang(ja) %doc README.jp.gz
 %{perl_sitearch}/Text/Kakasi.pm
 %dir %{perl_sitearch}/auto/Text/Kakasi
