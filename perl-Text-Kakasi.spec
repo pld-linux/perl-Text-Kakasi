@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	A KAKASI library module for Perl
 Summary(cs):	Modul s KAKASI knihovnou pro Perl
@@ -17,13 +21,17 @@ Summary(zh_CN):	Perl µÄ KAKASI ¿âÄ£¿é¡£
 Name:		perl-Text-Kakasi
 Version:	1.05
 Release:	3
-License:	GPL
+# README says just GPL, but module itself GPL v2+
+License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.daionet.gr.jp/~knok/kakasi/Text-Kakasi-%{version}.tar.gz
 # Source0-md5:	6c50ca6dce1fcc2f01446f6e305571a5
 URL:		http://www.daionet.gr.jp/~knok/kakasi/
 BuildRequires:	kakasi-devel >= 2.3.1
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	kakasi-dict
+%endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -96,10 +104,14 @@ konvertera Kanjitecken till Hiragana, Katakana eller Romaji.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
