@@ -93,7 +93,7 @@ konvertera Kanjitecken till Hiragana, Katakana eller Romaji.
 %setup -q -n Text-Kakasi-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
