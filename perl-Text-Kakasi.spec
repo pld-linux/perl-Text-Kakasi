@@ -78,7 +78,7 @@ convertire i caratteri Kanji in Hirigana, Katakana o Romanji.
 ºÇ¿·ÈÇ¤Ë´Ø¤·¤Æ¤Ï¡¢<http://kakasi.namazu.org/>¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
 
 %description -l pl
-Ten modu³ dostarcza interfejs libkakasi dla perla. libkakasi to czê¶æ
+Ten modu³ dostarcza interfejs libkakasi dla Perla. libkakasi to czê¶æ
 pakietu KAKASI. KAKASI to filtr konwertuj±cy znaki Kanji na Hiragana,
 Katakana lub Romaji, który mo¿e byæ przydatny przy czytaniu japoñskich
 dokumentów. Wiêcej informacji o KAKASI znajduje siê na stronie
