@@ -16,13 +16,13 @@ Summary(sv):	En KAKASI-bibliotekmodul för Perl
 Summary(zh_CN):	Perl µÄ KAKASI ¿âÄ£¿é¡£
 Name:		perl-Text-Kakasi
 Version:	1.05
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.daionet.gr.jp/~knok/kakasi/Text-Kakasi-%{version}.tar.gz
 URL:		http://www.daionet.gr.jp/~knok/kakasi/
 BuildRequires:	kakasi-devel >= 2.3.1
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -93,7 +93,8 @@ konvertera Kanjitecken till Hiragana, Katakana eller Romaji.
 %setup -q -n Text-Kakasi-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -108,8 +109,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README*
 %lang(ja) %doc README.jp*
-%{perl_sitearch}/Text/Kakasi.pm
-%dir %{perl_sitearch}/auto/Text/Kakasi
-%{perl_sitearch}/auto/Text/Kakasi/Kakasi.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Text/Kakasi/Kakasi.so
+%{perl_vendorarch}/Text/Kakasi.pm
+%dir %{perl_vendorarch}/auto/Text/Kakasi
+%{perl_vendorarch}/auto/Text/Kakasi/Kakasi.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Text/Kakasi/Kakasi.so
 %{_mandir}/man3/Text::Kakasi.3pm*
