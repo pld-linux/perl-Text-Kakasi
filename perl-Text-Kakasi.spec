@@ -20,7 +20,7 @@ Summary(sv):	En KAKASI-bibliotekmodul för Perl
 Summary(zh_CN):	Perl µÄ KAKASI ¿âÄ£¿é¡£
 Name:		perl-Text-Kakasi
 Version:	1.05
-Release:	3
+Release:	4
 # README says just GPL, but module itself GPL v2+
 License:	GPL v2+
 Group:		Development/Languages/Perl
