@@ -49,7 +49,7 @@ Kanji-Schriftzeichen in Hirahana, Katakana oder Romaji.
 
 %description -l es
 El módulo Text-Kakasi proporciona una interfaz de libkakasi (biblioteca
-KAKASI) para Perl. KAKASI es un filtro del proceso de lenguaje para 
+KAKASI) para Perl. KAKASI es un filtro del proceso de lenguaje para
 convertir carácteres Kanji a los Hiragana, Katana o Romaji.
 
 %description -l fr
@@ -78,7 +78,7 @@ dokumentów. Wiêcej informacji o KAKASI znajduje siê na stronie
 
 %description -l pt
 O módulo Text-Kakasi oferece uma interface da libkakasi (uma biblioteca
-de KAKASI) para o Perl. O KAKASI é um filtro de processamento para 
+de KAKASI) para o Perl. O KAKASI é um filtro de processamento para
 converter os caracteres Kanji para Hiragana, Katakana ou Romaji.
 
 %description -l ru
@@ -95,7 +95,7 @@ konvertera Kanjitecken till Hiragana, Katakana eller Romaji.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
