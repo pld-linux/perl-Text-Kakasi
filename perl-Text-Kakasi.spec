@@ -6,20 +6,20 @@
 %define	pdir	Text
 %define	pnam	Kakasi
 Summary:	A KAKASI library module for Perl
-Summary(cs):	Modul s KAKASI knihovnou pro Perl
-Summary(da):	Et KAKASI-modul for Perl
-Summary(de):	Ein KAKASI-Bibliothek Modul für Perl
-Summary(es):	Módulo de la Biblioteca KAKASI para Perl
-Summary(fr):	Un module de bibliothèque Kakasi pour Perl
-Summary(it):	Modulo di libreria KAKASI per Perl
-Summary(ja):	Perl ÍÑ¤Î KAKASI ¥é¥¤¥Ö¥é¥ê¥â¥¸¥å¡¼¥ë
-Summary(ko):	ÆŞÀ» À§ÇÑ KAKASI ¶óÀÌºê·¯¸® ¸ğÁÙ
-Summary(nb):	Et KAKASI-modul for Perl
-Summary(pl):	Interfejs Perla do biblioteki KAKASI
-Summary(pt):	Um módulo da biblioteca KAKASI para o Perl
-Summary(ru):	íÏÄÕÌØ ÂÉÂÌÉÏÔÅËÉ KAKASI ÄÌÑ Perl
-Summary(sv):	En KAKASI-bibliotekmodul för Perl
-Summary(zh_CN):	Perl µÄ KAKASI ¿âÄ£¿é¡£
+Summary(cs.UTF-8):   Modul s KAKASI knihovnou pro Perl
+Summary(da.UTF-8):   Et KAKASI-modul for Perl
+Summary(de.UTF-8):   Ein KAKASI-Bibliothek Modul fÃ¼r Perl
+Summary(es.UTF-8):   MÃ³dulo de la Biblioteca KAKASI para Perl
+Summary(fr.UTF-8):   Un module de bibliothÃ¨que Kakasi pour Perl
+Summary(it.UTF-8):   Modulo di libreria KAKASI per Perl
+Summary(ja.UTF-8):   Perl ç”¨ã® KAKASI ãƒ©ã‚¤ãƒ–ãƒ©ãƒªãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«
+Summary(ko.UTF-8):   í„ì„ ìœ„í•œ KAKASI ë¼ì´ë¸ŒëŸ¬ë¦¬ ëª¨ì¤„
+Summary(nb.UTF-8):   Et KAKASI-modul for Perl
+Summary(pl.UTF-8):   Interfejs Perla do biblioteki KAKASI
+Summary(pt.UTF-8):   Um mÃ³dulo da biblioteca KAKASI para o Perl
+Summary(ru.UTF-8):   ĞœĞ¾Ğ´ÑƒĞ»ÑŒ Ğ±Ğ¸Ğ±Ğ»Ğ¸Ğ¾Ñ‚ĞµĞºĞ¸ KAKASI Ğ´Ğ»Ñ Perl
+Summary(sv.UTF-8):   En KAKASI-bibliotekmodul fÃ¶r Perl
+Summary(zh_CN.UTF-8):   Perl çš„ KAKASI åº“æ¨¡å—ã€‚
 Name:		perl-Text-Kakasi
 Version:	2.04
 Release:	1
@@ -43,61 +43,61 @@ characters to Hiragana, Katakana or Romaji and may be helpful to read
 Japanese documents. More information about KAKASI is available at
 <http://kakasi.namazu.org/>.
 
-%description -l cs
-Modul Text-Kakasi poskytuje rozhraní ke knihovnì libkakasi do jazyka Perl.
-KAKASI je filtr pro konverze japonskıch znakù Hiragana, Katakana nebo Romaji.
+%description -l cs.UTF-8
+Modul Text-Kakasi poskytuje rozhranÃ­ ke knihovnÄ› libkakasi do jazyka Perl.
+KAKASI je filtr pro konverze japonskÃ½ch znakÅ¯ Hiragana, Katakana nebo Romaji.
 
-%description -l da
-Modulet Text-Kakasi giver et grænseflade for Perl til libkakasi (et
+%description -l da.UTF-8
+Modulet Text-Kakasi giver et grÃ¦nseflade for Perl til libkakasi (et
 KAKASI-bibliotek).  KAKASI er et sprogbearbejdningsfilter for at
 konvertere Kanjitegn til Hiragana, Katakana eller Romaji.
 
-%description -l de
-Das Text-Kakasi-Modul unterstützt ein libkakasi (eine KAKASI-Bibliothek)
-Interface für Perl.  KAKASI ist ein Sprachprozessfilter zur Umwandlung der
+%description -l de.UTF-8
+Das Text-Kakasi-Modul unterstÃ¼tzt ein libkakasi (eine KAKASI-Bibliothek)
+Interface fÃ¼r Perl.  KAKASI ist ein Sprachprozessfilter zur Umwandlung der
 Kanji-Schriftzeichen in Hirahana, Katakana oder Romaji.
 
-%description -l es
-El módulo Text-Kakasi proporciona una interfaz de libkakasi (biblioteca
+%description -l es.UTF-8
+El mÃ³dulo Text-Kakasi proporciona una interfaz de libkakasi (biblioteca
 KAKASI) para Perl. KAKASI es un filtro del proceso de lenguaje para
-convertir carácteres Kanji a los Hiragana, Katana o Romaji.
+convertir carÃ¡cteres Kanji a los Hiragana, Katana o Romaji.
 
-%description -l fr
-Le module Text-Kakasi fournit une interface libkakasi (bibliothèque Kakasi)
+%description -l fr.UTF-8
+Le module Text-Kakasi fournit une interface libkakasi (bibliothÃ¨que Kakasi)
 pour Perl. Kakasi est un filtre de processeur de langage pour convertir les
-caractères Kanji en caractères Hiragana, Katakana ou Romaji.
+caractÃ¨res Kanji en caractÃ¨res Hiragana, Katakana ou Romaji.
 
-%description -l it
+%description -l it.UTF-8
 Il modulo Text-Kakasi fornisce un'interfacia libkakasi (una libreria
-KAKASI) per Perl. KAKASI è un filtro di elaborazione delle lingue per
+KAKASI) per Perl. KAKASI Ã¨ un filtro di elaborazione delle lingue per
 convertire i caratteri Kanji in Hirigana, Katakana o Romanji.
 
-%description -l ja
-¤³¤Î¥â¥¸¥å¡¼¥ë¤Ï¡¢¹â¶¶Íµ¿®¤µ¤ó¤ÎºîÀ®¤µ¤ì¤¿¥½¥Õ¥È¥¦¥§¥¢KAKASI¤òperl
-¤«¤éÍÑ¤¤¤ë¤¿¤á¤Î¤â¤Î¤Ç¤¹¡£
+%description -l ja.UTF-8
+ã“ã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã¯ã€é«˜æ©‹è£•ä¿¡ã•ã‚“ã®ä½œæˆã•ã‚ŒãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢KAKASIã‚’perl
+ã‹ã‚‰ç”¨ã„ã‚‹ãŸã‚ã®ã‚‚ã®ã§ã™ã€‚
 
-¤³¤Î¥â¥¸¥å¡¼¥ë¤ò»È¤¦¤¿¤á¤Ë¤Ï¡¢ºÇ¿·ÈÇ¤ÎKAKASI(2.3.0°Ê¹ß)¤¬É¬Í×¤Ç¤¹¡£
-ºÇ¿·ÈÇ¤Ë´Ø¤·¤Æ¤Ï¡¢<http://kakasi.namazu.org/>¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+ã“ã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã‚’ä½¿ã†ãŸã‚ã«ã¯ã€æœ€æ–°ç‰ˆã®KAKASI(2.3.0ä»¥é™)ãŒå¿…è¦ã§ã™ã€‚
+æœ€æ–°ç‰ˆã«é–¢ã—ã¦ã¯ã€<http://kakasi.namazu.org/>ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-%description -l pl
-Ten modu³ dostarcza interfejs libkakasi dla Perla. libkakasi to czê¶æ
-pakietu KAKASI. KAKASI to filtr konwertuj±cy znaki Kanji na Hiragana,
-Katakana lub Romaji, który mo¿e byæ przydatny przy czytaniu japoñskich
-dokumentów. Wiêcej informacji o KAKASI znajduje siê na stronie
+%description -l pl.UTF-8
+Ten moduÅ‚ dostarcza interfejs libkakasi dla Perla. libkakasi to czÄ™Å›Ä‡
+pakietu KAKASI. KAKASI to filtr konwertujÄ…cy znaki Kanji na Hiragana,
+Katakana lub Romaji, ktÃ³ry moÅ¼e byÄ‡ przydatny przy czytaniu japoÅ„skich
+dokumentÃ³w. WiÄ™cej informacji o KAKASI znajduje siÄ™ na stronie
 <http://kakasi.namazu.org/>.
 
-%description -l pt
-O módulo Text-Kakasi oferece uma interface da libkakasi (uma biblioteca
-de KAKASI) para o Perl. O KAKASI é um filtro de processamento para
+%description -l pt.UTF-8
+O mÃ³dulo Text-Kakasi oferece uma interface da libkakasi (uma biblioteca
+de KAKASI) para o Perl. O KAKASI Ã© um filtro de processamento para
 converter os caracteres Kanji para Hiragana, Katakana ou Romaji.
 
-%description -l ru
-íÏÄÕÌØ Text-Kakasi ÓÏÄÅÒÖÉÔ ÂÉÂÌÉÏÔÅËÕ libkakasi, ËÏÔÏÒÁÑ ĞÒÅÄÏÓÔÁ×ÌÑÅÔ
-ÉÎÔÅÒÆÅÊÓ KAKASI ÄÌÑ Perl. æÉÌØÔÒ KAKASI ĞÒÅÄÎÁÚÎÁŞÅÎ ÄÌÑ ĞÒÅÏÂÒÁÚÏ×ÁÎÉÑ
-ÔÅËÓÔÁ É ËÏÄÉÒÏ×ËÉ Kanji × Hiragana, Katakana ÉÌÉ Romaji.
-%description -l sv
-Modulen Text-Kakasi ger ett gränssnitt för Perl till libkakasi (ett
-KAKASI-bibliotek).  KAKASI är ett språkbearbetningsfilter för att
+%description -l ru.UTF-8
+ĞœĞ¾Ğ´ÑƒĞ»ÑŒ Text-Kakasi ÑĞ¾Ğ´ĞµÑ€Ğ¶Ğ¸Ñ‚ Ğ±Ğ¸Ğ±Ğ»Ğ¸Ğ¾Ñ‚ĞµĞºÑƒ libkakasi, ĞºĞ¾Ñ‚Ğ¾Ñ€Ğ°Ñ Ğ¿Ñ€ĞµĞ´Ğ¾ÑÑ‚Ğ°Ğ²Ğ»ÑĞµÑ‚
+Ğ¸Ğ½Ñ‚ĞµÑ€Ñ„ĞµĞ¹Ñ KAKASI Ğ´Ğ»Ñ Perl. Ğ¤Ğ¸Ğ»ÑŒÑ‚Ñ€ KAKASI Ğ¿Ñ€ĞµĞ´Ğ½Ğ°Ğ·Ğ½Ğ°Ñ‡ĞµĞ½ Ğ´Ğ»Ñ Ğ¿Ñ€ĞµĞ¾Ğ±Ñ€Ğ°Ğ·Ğ¾Ğ²Ğ°Ğ½Ğ¸Ñ
+Ñ‚ĞµĞºÑÑ‚Ğ° Ğ¸ ĞºĞ¾Ğ´Ğ¸Ñ€Ğ¾Ğ²ĞºĞ¸ Kanji Ğ² Hiragana, Katakana Ğ¸Ğ»Ğ¸ Romaji.
+%description -l sv.UTF-8
+Modulen Text-Kakasi ger ett grÃ¤nssnitt fÃ¶r Perl till libkakasi (ett
+KAKASI-bibliotek).  KAKASI Ã¤r ett sprÃ¥kbearbetningsfilter fÃ¶r att
 konvertera Kanjitecken till Hiragana, Katakana eller Romaji.
 
 %prep
