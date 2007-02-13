@@ -6,20 +6,20 @@
 %define	pdir	Text
 %define	pnam	Kakasi
 Summary:	A KAKASI library module for Perl
-Summary(cs.UTF-8):   Modul s KAKASI knihovnou pro Perl
-Summary(da.UTF-8):   Et KAKASI-modul for Perl
-Summary(de.UTF-8):   Ein KAKASI-Bibliothek Modul für Perl
-Summary(es.UTF-8):   Módulo de la Biblioteca KAKASI para Perl
-Summary(fr.UTF-8):   Un module de bibliothèque Kakasi pour Perl
-Summary(it.UTF-8):   Modulo di libreria KAKASI per Perl
-Summary(ja.UTF-8):   Perl 用の KAKASI ライブラリモジュール
-Summary(ko.UTF-8):   펄을 위한 KAKASI 라이브러리 모줄
-Summary(nb.UTF-8):   Et KAKASI-modul for Perl
-Summary(pl.UTF-8):   Interfejs Perla do biblioteki KAKASI
-Summary(pt.UTF-8):   Um módulo da biblioteca KAKASI para o Perl
-Summary(ru.UTF-8):   Модуль библиотеки KAKASI для Perl
-Summary(sv.UTF-8):   En KAKASI-bibliotekmodul för Perl
-Summary(zh_CN.UTF-8):   Perl 的 KAKASI 库模块。
+Summary(cs.UTF-8):	Modul s KAKASI knihovnou pro Perl
+Summary(da.UTF-8):	Et KAKASI-modul for Perl
+Summary(de.UTF-8):	Ein KAKASI-Bibliothek Modul für Perl
+Summary(es.UTF-8):	Módulo de la Biblioteca KAKASI para Perl
+Summary(fr.UTF-8):	Un module de bibliothèque Kakasi pour Perl
+Summary(it.UTF-8):	Modulo di libreria KAKASI per Perl
+Summary(ja.UTF-8):	Perl 用の KAKASI ライブラリモジュール
+Summary(ko.UTF-8):	펄을 위한 KAKASI 라이브러리 모줄
+Summary(nb.UTF-8):	Et KAKASI-modul for Perl
+Summary(pl.UTF-8):	Interfejs Perla do biblioteki KAKASI
+Summary(pt.UTF-8):	Um módulo da biblioteca KAKASI para o Perl
+Summary(ru.UTF-8):	Модуль библиотеки KAKASI для Perl
+Summary(sv.UTF-8):	En KAKASI-bibliotekmodul för Perl
+Summary(zh_CN.UTF-8):	Perl 的 KAKASI 库模块。
 Name:		perl-Text-Kakasi
 Version:	2.04
 Release:	1
