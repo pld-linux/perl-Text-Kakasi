@@ -21,7 +21,7 @@ Summary(sv.UTF-8):	En KAKASI-bibliotekmodul för Perl
 Summary(zh_CN.UTF-8):	Perl 的 KAKASI 库模块。
 Name:		perl-Text-Kakasi
 Version:	2.04
-Release:	14
+Release:	15
 # README says just GPL, but module itself GPL v2+
 License:	GPL v2+
 Group:		Development/Languages/Perl
